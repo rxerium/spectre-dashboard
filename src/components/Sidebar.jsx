@@ -7,9 +7,10 @@ import {
   Database,
   AlertTriangle,
   Network,
-  Search,
   FileText,
   Zap,
+  Mail,
+  TrendingUp,
 } from 'lucide-react';
 
 const Sidebar = () => {
@@ -22,16 +23,16 @@ const Sidebar = () => {
         { path: '/', label: 'Dashboard', icon: Activity },
         { path: '/uptime', label: 'Uptime', icon: Zap },
         { path: '/performance', label: 'Performance', icon: Activity },
+        { path: '/cdn', label: 'CDN Health', icon: Zap },
       ],
     },
     {
       title: 'SECURITY',
       items: [
-        { path: '/ports', label: 'Port Scanning', icon: Network },
-        { path: '/vulnerabilities', label: 'Vulnerabilities', icon: AlertTriangle },
         { path: '/ssl', label: 'SSL/TLS', icon: Lock },
-        { path: '/malware', label: 'Malware Detection', icon: Shield },
-        { path: '/ip-reputation', label: 'IP Reputation', icon: Search },
+        { path: '/malware', label: 'Malware', icon: Shield },
+        { path: '/zeroday', label: 'Zero-Day', icon: AlertTriangle },
+        { path: '/blacklist', label: 'Blacklist', icon: Shield },
       ],
     },
     {
@@ -40,16 +41,18 @@ const Sidebar = () => {
         { path: '/dns', label: 'DNS', icon: Globe },
         { path: '/subdomains', label: 'Subdomains', icon: Network },
         { path: '/whois', label: 'WHOIS', icon: FileText },
-        { path: '/cert-transparency', label: 'Cert Transparency', icon: Lock },
-        { path: '/email-security', label: 'Email Security', icon: Shield },
+        { path: '/domain-expiration', label: 'Expiration', icon: AlertTriangle },
+        { path: '/email-security', label: 'Email', icon: Mail },
+        { path: '/cert-transparency', label: 'Certificates', icon: Lock },
       ],
     },
     {
       title: 'INFRASTRUCTURE',
       items: [
-        { path: '/cdn', label: 'CDN Health', icon: Zap },
         { path: '/database', label: 'Database', icon: Database },
         { path: '/dependencies', label: 'Dependencies', icon: FileText },
+        { path: '/api-rate-limits', label: 'Rate Limits', icon: Zap },
+        { path: '/uptime-trends', label: 'Trends', icon: TrendingUp },
       ],
     },
   ];
