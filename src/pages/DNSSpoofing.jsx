@@ -9,6 +9,7 @@ const DNSSpoofing = () => {
       description="Detect DNS spoofing attacks"
       icon={AlertTriangle}
       fetchFunction={spectreApi.checkDNSSpoofing}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">DNS Spoofing Check Results</h2>

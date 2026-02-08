@@ -9,6 +9,7 @@ const SSLExpiry = () => {
       description="Track SSL certificate expiration dates"
       icon={Lock}
       fetchFunction={spectreApi.checkSSLExpiry}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">SSL Certificate Expiration</h2>

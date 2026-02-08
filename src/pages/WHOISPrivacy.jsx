@@ -9,6 +9,7 @@ const WHOISPrivacy = () => {
       description="Verify WHOIS privacy registration status"
       icon={Shield}
       fetchFunction={spectreApi.checkWhoisPrivacy}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">WHOIS Privacy Status</h2>

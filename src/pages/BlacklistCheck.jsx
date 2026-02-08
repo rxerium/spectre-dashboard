@@ -9,6 +9,7 @@ const BlacklistCheck = () => {
       description="Check if domains are blacklisted"
       icon={Shield}
       fetchFunction={spectreApi.checkBlacklist}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">Blacklist Status</h2>

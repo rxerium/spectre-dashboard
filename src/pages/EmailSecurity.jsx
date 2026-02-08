@@ -9,6 +9,7 @@ const EmailSecurity = () => {
       description="SPF, DKIM, and DMARC record validation"
       icon={Mail}
       fetchFunction={spectreApi.checkEmailSecurity}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">Email Security Records</h2>

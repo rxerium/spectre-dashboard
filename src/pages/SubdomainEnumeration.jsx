@@ -9,6 +9,7 @@ const SubdomainEnumeration = () => {
       description="Discover and monitor subdomains"
       icon={Network}
       fetchFunction={spectreApi.checkSubdomains}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">Discovered Subdomains</h2>

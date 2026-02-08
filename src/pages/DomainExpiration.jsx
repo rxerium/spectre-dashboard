@@ -9,6 +9,7 @@ const DomainExpiration = () => {
       description="Monitor domain expiration dates"
       icon={AlertTriangle}
       fetchFunction={spectreApi.checkDomainExpiration}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">Domain Expiration Status</h2>

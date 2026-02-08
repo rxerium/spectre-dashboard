@@ -9,6 +9,7 @@ const CertificateTransparency = () => {
       description="Monitor Certificate Transparency logs"
       icon={Lock}
       fetchFunction={spectreApi.checkCertTransparency}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">CT Log Entries</h2>

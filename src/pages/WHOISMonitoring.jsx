@@ -9,6 +9,7 @@ const WHOISMonitoring = () => {
       description="Monitor domain registration changes"
       icon={FileText}
       fetchFunction={spectreApi.checkWhois}
+      supportsDomain={true}
       renderData={(data) => (
         <div className="scan-card">
           <h2 className="text-xl font-bold text-white mb-4">WHOIS Information</h2>

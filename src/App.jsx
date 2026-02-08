@@ -25,6 +25,7 @@ import UptimeTrends from './pages/UptimeTrends';
 import SSLRenewal from './pages/SSLRenewal';
 import BTCMonitor from './pages/BTCMonitor';
 import WebsiteMonitor from './pages/WebsiteMonitor';
+import APITest from "./pages/APITest";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <div className="flex-1 overflow-y-auto">
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/api-test" element={<APITest />} />
 
             {/* Monitoring */}
             <Route path="/uptime" element={<UptimeMonitoring />} />
