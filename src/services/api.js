@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://spectre.rxerium.workers.dev';
+// Use proxy in development to avoid CORS issues
+const API_BASE_URL = import.meta.env.DEV
+  ? '/api'
+  : 'https://spectre.rxerium.workers.dev';
 const API_KEY = 're_HZjx1asQ_nG3uXUjRn6GmUtCbn71HWxry';
 
 const apiClient = axios.create({

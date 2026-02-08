@@ -7,5 +7,7 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #156 | 11:00 AM | 🟣 | API proxy configuration for CORS-free development | ~312 |
+| #155 | " | 🔵 | Spectre API Service Configuration Examined | ~462 |
 | #91 | 10:39 AM | 🟣 | Spectre API client with 30+ security scan endpoints | ~453 |
 </claude-mem-context>
